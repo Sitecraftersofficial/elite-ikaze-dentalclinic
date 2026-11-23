@@ -10,33 +10,154 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as CommunityRouteImport } from './routes/community'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as PaymentRouteImport } from './routes/payment'
+import { Route as SafetyRouteImport } from './routes/safety'
+import { Route as ServicesRouteImport } from './routes/services'
+import { Route as WhyEliteRouteImport } from './routes/why-elite'
+import { Route as YourVisitRouteImport } from './routes/your-visit'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommunityRoute = CommunityRouteImport.update({
+  id: '/community',
+  path: '/community',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PaymentRoute = PaymentRouteImport.update({
+  id: '/payment',
+  path: '/payment',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SafetyRoute = SafetyRouteImport.update({
+  id: '/safety',
+  path: '/safety',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesRoute = ServicesRouteImport.update({
+  id: '/services',
+  path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WhyEliteRoute = WhyEliteRouteImport.update({
+  id: '/why-elite',
+  path: '/why-elite',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const YourVisitRoute = YourVisitRouteImport.update({
+  id: '/your-visit',
+  path: '/your-visit',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/community': typeof CommunityRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/payment': typeof PaymentRoute
+  '/safety': typeof SafetyRoute
+  '/services': typeof ServicesRoute
+  '/why-elite': typeof WhyEliteRoute
+  '/your-visit': typeof YourVisitRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/community': typeof CommunityRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/payment': typeof PaymentRoute
+  '/safety': typeof SafetyRoute
+  '/services': typeof ServicesRoute
+  '/why-elite': typeof WhyEliteRoute
+  '/your-visit': typeof YourVisitRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/community': typeof CommunityRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/payment': typeof PaymentRoute
+  '/safety': typeof SafetyRoute
+  '/services': typeof ServicesRoute
+  '/why-elite': typeof WhyEliteRoute
+  '/your-visit': typeof YourVisitRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/community'
+    | '/contact'
+    | '/faq'
+    | '/payment'
+    | '/safety'
+    | '/services'
+    | '/why-elite'
+    | '/your-visit'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/community'
+    | '/contact'
+    | '/faq'
+    | '/payment'
+    | '/safety'
+    | '/services'
+    | '/why-elite'
+    | '/your-visit'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/community'
+    | '/contact'
+    | '/faq'
+    | '/payment'
+    | '/safety'
+    | '/services'
+    | '/why-elite'
+    | '/your-visit'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  CommunityRoute: typeof CommunityRoute
+  ContactRoute: typeof ContactRoute
+  FaqRoute: typeof FaqRoute
+  PaymentRoute: typeof PaymentRoute
+  SafetyRoute: typeof SafetyRoute
+  ServicesRoute: typeof ServicesRoute
+  WhyEliteRoute: typeof WhyEliteRoute
+  YourVisitRoute: typeof YourVisitRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +169,83 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/community': {
+      id: '/community'
+      path: '/community'
+      fullPath: '/community'
+      preLoaderRoute: typeof CommunityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/payment': {
+      id: '/payment'
+      path: '/payment'
+      fullPath: '/payment'
+      preLoaderRoute: typeof PaymentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/safety': {
+      id: '/safety'
+      path: '/safety'
+      fullPath: '/safety'
+      preLoaderRoute: typeof SafetyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services': {
+      id: '/services'
+      path: '/services'
+      fullPath: '/services'
+      preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/why-elite': {
+      id: '/why-elite'
+      path: '/why-elite'
+      fullPath: '/why-elite'
+      preLoaderRoute: typeof WhyEliteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/your-visit': {
+      id: '/your-visit'
+      path: '/your-visit'
+      fullPath: '/your-visit'
+      preLoaderRoute: typeof YourVisitRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  CommunityRoute: CommunityRoute,
+  ContactRoute: ContactRoute,
+  FaqRoute: FaqRoute,
+  PaymentRoute: PaymentRoute,
+  SafetyRoute: SafetyRoute,
+  ServicesRoute: ServicesRoute,
+  WhyEliteRoute: WhyEliteRoute,
+  YourVisitRoute: YourVisitRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
