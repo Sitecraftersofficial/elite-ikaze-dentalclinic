@@ -138,9 +138,20 @@ function SiteFooter() {
         <p className="translate-y-[12%] whitespace-nowrap text-center font-display text-[21vw] font-semibold leading-[0.7] tracking-[-0.09em] text-primary">IKAZE<span className="text-accent">.</span></p>
       </div>
       <div className="relative border-t border-primary-foreground/15 bg-primary-deep">
-        <div className="shell flex-wrap items-center justify-between gap-3 py-5 text-xs text-primary-foreground/55">
+        <div className="shell flex flex-col items-center justify-between gap-3 py-5 text-center text-xs text-primary-foreground/55 md:flex-row md:text-left">
           <p>© {new Date().getFullYear()} {CLINIC.name}.</p>
           <p className="flex items-center gap-2">Made for brighter days <Plus className="h-3 w-3 text-accent" /></p>
+          <p>
+            Made in Rwanda by the{" "}
+            <a
+              href="https://www.sitecraftersltd.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-accent/60 underline-offset-4 text-accent transition-colors duration-500 hover:text-primary-foreground"
+            >
+              Sitecrafters Team
+            </a>
+          </p>
         </div>
       </div>
     </footer>

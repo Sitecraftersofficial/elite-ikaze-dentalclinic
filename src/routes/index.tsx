@@ -41,11 +41,11 @@ export default function Index() {
             </a>
           </div>
 
-          <div className="relative mx-auto w-full max-w-[34rem] pb-10 lg:mx-0 lg:justify-self-end">
+          <div className="relative mx-auto w-full max-w-136 pb-10 lg:mx-0 lg:justify-self-end">
             <div className="absolute -left-8 top-[15%] h-28 w-28 animate-drift rounded-full border border-accent/60 bg-accent/25" aria-hidden="true" />
-            <div className="smile-arch relative overflow-hidden border-[6px] border-enamel bg-secondary shadow-[var(--shadow-soft)]">
-              <img src={hero} alt="Bright treatment room with a teal dental chair" className="aspect-[4/5] w-full object-cover" />
-              <div className="absolute inset-x-0 bottom-0 flex items-end justify-between bg-gradient-to-t from-primary-deep/85 to-transparent p-7 pt-20 text-primary-foreground">
+            <div className="smile-arch relative overflow-hidden border-[6px] border-enamel bg-secondary shadow-(--shadow-soft)">
+              <img src={hero} alt="Bright treatment room with a teal dental chair" className="aspect-4/5 w-full object-cover" />
+              <div className="absolute inset-x-0 bottom-0 flex items-end justify-between bg-linear-to-t from-primary-deep/85 to-transparent p-7 pt-20 text-primary-foreground">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Come as you are</p>
                   <p className="mt-1 font-display text-2xl font-medium">Leave smiling.</p>
@@ -53,7 +53,7 @@ export default function Index() {
                 <MapPin className="mb-1 h-6 w-6 text-accent" />
               </div>
             </div>
-            <div className="absolute -bottom-1 -left-2 flex h-32 w-32 flex-col items-center justify-center rounded-full border-4 border-background bg-primary-deep text-center text-primary-foreground shadow-[var(--shadow-soft)] sm:-left-8">
+            <div className="absolute -top-8 -left-2 flex h-32 w-32 flex-col items-center justify-center rounded-full border-4 border-background bg-primary-deep text-center text-primary-foreground shadow-(--shadow-soft) sm:-left-8">
               <span className="font-display text-4xl font-semibold text-accent">20</span>
               <span className="text-xs font-semibold uppercase tracking-widest">minute target</span>
             </div>
@@ -97,7 +97,7 @@ export default function Index() {
 
       <section className="shell pb-6 pt-10 md:pb-10 md:pt-24">
         <div className="relative overflow-hidden rounded-[3rem_0.75rem_3rem_0.75rem] bg-secondary px-6 py-14 md:px-14 md:py-20">
-          <div className="absolute -right-16 -top-24 h-72 w-72 rounded-full border-[42px] border-enamel/70" aria-hidden="true" />
+          <div className="absolute -right-16 -top-24 h-72 w-72 rounded-full border-42 border-enamel/70" aria-hidden="true" />
           <div className="relative grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <p className="eyebrow">Welcome to Elite Ikaze</p>
@@ -136,7 +136,7 @@ export default function Index() {
         <div className="relative overflow-hidden bg-primary-deep px-6 py-16 text-center text-primary-foreground smile-arch md:px-12 md:py-24">
           <div className="absolute left-[8%] top-8 h-8 w-8 rounded-full bg-accent" aria-hidden="true" />
           <div className="absolute bottom-16 right-[9%] h-16 w-16 rounded-full border border-primary-foreground/25" aria-hidden="true" />
-          <p className="eyebrow !text-accent">Your next smile</p>
+          <p className="eyebrow text-accent!">Your next smile</p>
           <h2 className="mx-auto mt-6 max-w-4xl text-balance font-display text-4xl font-semibold leading-tight md:text-6xl">Let’s make your appointment the easiest part of your day.</h2>
           <p className="mx-auto mt-6 max-w-xl text-lg text-primary-foreground/75">Call or WhatsApp {CLINIC.phone}. We look forward to caring for your smile.</p>
           <div className="mt-9 flex flex-wrap justify-center gap-3">
