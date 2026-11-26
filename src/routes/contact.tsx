@@ -9,7 +9,7 @@ export const Route = createFileRoute("/contact")({
   component: Contact,
 });
 
-const field = "mt-1 w-full rounded-xl border border-input bg-card px-4 py-3 outline-none focus:ring-2 focus:ring-ring";
+const field = "enamel-input mt-2 w-full px-4 py-3.5 outline-none transition-colors focus:border-primary focus:ring-2 focus:ring-ring/20";
 
 function Contact() {
   const [visit, setVisit] = useState("Clinic visit");
@@ -29,8 +29,9 @@ function Contact() {
           <p className="flex gap-3 break-all"><Mail className="h-6 w-6 shrink-0 text-primary" /><a href={`mailto:${CLINIC.email}`}>{CLINIC.email}</a></p>
           <iframe title="Map" className="h-64 w-full rounded-2xl border" loading="lazy" src="https://www.google.com/maps?q=RG+Market+Plaza+Kicukiro+Kigali&output=embed" />
         </div>
-        <form onSubmit={submit} className="card-soft space-y-4 p-7">
-          <h2 className="text-2xl font-semibold text-primary-deep">Request an appointment</h2>
+          <form onSubmit={submit} className="card-soft space-y-5 p-7 md:p-9">
+          <p className="eyebrow">Your visit, your way</p>
+          <h2 className="text-3xl font-semibold text-primary-deep">Request an appointment</h2>
           <label className="block text-sm font-medium">Full name<input name="name" required className={field} /></label>
           <label className="block text-sm font-medium">Phone number<input name="phone" required type="tel" className={field} /></label>
           <div className="flex gap-2">
