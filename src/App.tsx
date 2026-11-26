@@ -76,7 +76,7 @@ function SiteHeader() {
     <header className="sticky top-0 z-50 px-3 pt-3 md:px-5">
       <div className="mx-auto flex max-w-344 items-center justify-between gap-3 rounded-full border bg-background/90 p-2 pl-3 shadow-(--shadow-soft) backdrop-blur-xl">
         <Link to="/" className="flex shrink-0 items-center" onClick={() => setOpen(false)} aria-label={`${CLINIC.name} home`}>
-          <img src={logo} alt="" className="h-[4.5rem] w-auto rounded-[1.5rem] object-contain" />
+          <img src={logo} alt="" className="h-18 w-auto rounded-[1.5rem] object-contain" />
         </Link>
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary navigation">
           {NAV.slice(0, 4).map((item) => (
