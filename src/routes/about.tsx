@@ -1,11 +1,8 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { PageHeader, Section, CheckList } from "@/components/Page";
-import { CLINIC, meta } from "@/lib/site";
 
-export const Route = createFileRoute("/about")({
-  head: () => ({ meta: meta("About Us | Elite Ikaze Dental Clinic", "A private, licensed dental clinic at Kicukiro Centre, Kigali, built around efficiency, availability and clinical quality.") }),
-  component: About,
-});
+import { PageHeader, Section, CheckList } from "@/components/Page";
+import { CLINIC } from "@/lib/site";
+
+
 
 const values: [string, string][] = [
   ["Quality and patient safety", "Your health and safety come first in everything we do."],
@@ -16,7 +13,7 @@ const values: [string, string][] = [
   ["Social responsibility", "We give back through community screening and oral health education."],
 ];
 
-function About() {
+export default function About() {
   return (
     <>
       <PageHeader eyebrow="About us" title="Who we are" intro={`${CLINIC.name} is a private dental clinic at Kicukiro Centre, Kigali, offering diagnostic, preventive, restorative, surgical and prosthetic dental services in one place, delivered by licensed oral health professionals.`} />

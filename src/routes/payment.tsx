@@ -1,11 +1,8 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { PageHeader, Section } from "@/components/Page";
-import { meta } from "@/lib/site";
 
-export const Route = createFileRoute("/payment")({
-  head: () => ({ meta: meta("Payment & Insurance | Elite Ikaze Dental Clinic", "Affordable, quality dental care in Kigali. Indicative prices and insurance information.") }),
-  component: Payment,
-});
+import { PageHeader, Section } from "@/components/Page";
+
+
+
 
 const prices: [string, string][] = [
   ["Consultation & diagnosis", "12,000"],
@@ -15,7 +12,7 @@ const prices: [string, string][] = [
   ["Orthodontic treatment (full arch)", "1,350,000"],
 ];
 
-function Payment() {
+export default function Payment() {
   return (
     <>
       <PageHeader eyebrow="Payment & insurance" title="Quality care, kept affordable" intro="Our prices are set below many premium clinics while maintaining high clinical standards." />

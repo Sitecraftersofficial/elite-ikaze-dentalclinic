@@ -1,24 +1,24 @@
-# Elite-Ikaze-DentalClinic
+# Elite Ikaze Dental Clinic
 
-the attached are the details and logo of what i want
 
-This project was built with [Lovable](https://lovable.dev).
 
-## Build with Lovable
+Elite Ikaze Dental Clinic website built with React and Vite.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/8bece617-a37a-4c79-ba72-fde0f92298a9).
+The application uses a standard Vite `index.html` document and React entry point at `src/main.tsx`.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+
+
+
+
+
 
 ## Development
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Install dependencies and start the local development server with Node.js and npm:
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+npm install
 npm run dev
 ```
+
+Run checks with `npm run test` and `npm run lint`. Build production assets with `npm run build`.

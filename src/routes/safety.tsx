@@ -1,12 +1,9 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { ShieldCheck } from "lucide-react";
 import { PageHeader, Section } from "@/components/Page";
-import { meta } from "@/lib/site";
 
-export const Route = createFileRoute("/safety")({
-  head: () => ({ meta: meta("Your Safety | Elite Ikaze Dental Clinic", "Class B autoclave sterilization, single-use items, full protective equipment and licensed professionals, following Rwanda Ministry of Health guidelines.") }),
-  component: Safety,
-});
+
+
 
 const items: [string, string][] = [
   ["Sterilized instruments", "Every instrument is cleaned and sterilized in a Class B autoclave, sealed in a pouch and traced to its cycle date."],
@@ -20,7 +17,7 @@ const items: [string, string][] = [
   ["Private records", "Your information is kept in a secure electronic system and shared only with your written permission or where the law requires it."],
 ];
 
-function Safety() {
+export default function Safety() {
   return (
     <>
       <PageHeader eyebrow="Your safety" title="Safety at the centre of everything we do" intro="We follow Rwanda Ministry of Health guidelines for infection prevention and patient safety." />

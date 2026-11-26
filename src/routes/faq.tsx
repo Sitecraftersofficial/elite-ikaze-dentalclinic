@@ -1,12 +1,9 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { PageHeader, Section } from "@/components/Page";
-import { meta } from "@/lib/site";
 
-export const Route = createFileRoute("/faq")({
-  head: () => ({ meta: meta("FAQ | Elite Ikaze Dental Clinic", "Answers about location, booking, waiting times, children, home visits, braces, pain and sterilization.") }),
-  component: Faq,
-});
+
+
 
 const faqs: [string, string][] = [
   ["Where is the clinic located?", "We are on the 4th floor of RG Market Plaza at Kicukiro Centre, Kicukiro District, Kigali."],
@@ -20,7 +17,7 @@ const faqs: [string, string][] = [
   ["What if I need treatment you cannot provide?", "We refer you to a referral hospital with full documentation and follow up on your care."],
 ];
 
-function Faq() {
+export default function Faq() {
   return (
     <>
       <PageHeader eyebrow="FAQ" title="Frequently asked questions" />

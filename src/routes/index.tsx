@@ -1,18 +1,10 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { Clock, Monitor, Home, ShieldCheck, ArrowUpRight, ArrowRight, MapPin, Plus } from "lucide-react";
 import hero from "@/assets/clinic-room.jpg";
 import { Section } from "@/components/Page";
-import { CLINIC, meta, whatsappLink } from "@/lib/site";
+import { CLINIC, whatsappLink } from "@/lib/site";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: meta(
-      "Elite Ikaze Dental Clinic | Dentist in Kicukiro, Kigali",
-      "Licensed dental clinic at Kicukiro Centre, Kigali. Check-ups, fillings, root canals, crowns, braces, whitening and home-visit dentistry. Short waiting times.",
-    ),
-  }),
-  component: Index,
-});
+
 
 const highlights = [
   { icon: Clock, title: "Short waiting times", text: "We aim to see you within 20 minutes of your appointment.", number: "01" },
@@ -23,7 +15,7 @@ const highlights = [
 
 const services = ["Check-ups & Diagnosis", "Fillings", "Root Canal Treatment", "Crowns, Bridges & Dentures", "Braces & Aligners", "Teeth Whitening"];
 
-function Index() {
+export default function Index() {
   return (
     <>
       <section className="hero-grid relative overflow-hidden border-b">

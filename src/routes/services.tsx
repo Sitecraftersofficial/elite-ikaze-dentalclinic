@@ -1,11 +1,8 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { PageHeader, Section } from "@/components/Page";
-import { meta } from "@/lib/site";
 
-export const Route = createFileRoute("/services")({
-  head: () => ({ meta: meta("Dental Services | Elite Ikaze Dental Clinic", "Check-ups, cleaning, fillings, root canals, extractions, gum treatment, children's dentistry, crowns, braces and whitening in Kicukiro.") }),
-  component: Services,
-});
+import { PageHeader, Section } from "@/components/Page";
+
+
+
 
 const list: [string, string][] = [
   ["Check-ups & Diagnosis", "Complete oral examination, diagnosis and a personalised treatment plan. Digital X-rays help us see what the eye cannot."],
@@ -21,7 +18,7 @@ const list: [string, string][] = [
   ["Community Outreach", "Oral health screening and education for schools, churches and workplaces."],
 ];
 
-function Services() {
+export default function Services() {
   return (
     <>
       <PageHeader eyebrow="Our services" title="Full dental care for adults and children" intro="Each treatment begins with a proper examination and a clear treatment plan." />

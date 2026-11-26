@@ -1,13 +1,10 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { PageHeader, Section } from "@/components/Page";
-import { meta } from "@/lib/site";
 
-export const Route = createFileRoute("/community")({
-  head: () => ({ meta: meta("Community & Partnerships | Elite Ikaze Dental Clinic", "Dental screening days, corporate staff packages, referrals from health facilities and team mouthguard fittings in Kigali.") }),
-  component: Community,
-});
 
-function Community() {
+
+
+export default function Community() {
   return (
     <>
       <PageHeader eyebrow="Community & partnerships" title="Good oral health starts in the community" intro="We offer free or low-cost dental screening days at schools, churches and workplaces, and provide oral health education to prevent tooth decay and gum disease." />

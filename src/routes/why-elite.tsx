@@ -1,13 +1,10 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { PageHeader, Section, Steps, CheckList } from "@/components/Page";
-import { meta, whatsappLink } from "@/lib/site";
+import { whatsappLink } from "@/lib/site";
 
-export const Route = createFileRoute("/why-elite")({
-  head: () => ({ meta: meta("What Makes Us Different | Elite Ikaze Dental Clinic", "Intraoral camera consultations, home-visit dentistry, a Fresh-Breath Clinic, custom sports mouthguards and easy WhatsApp care.") }),
-  component: Why,
-});
 
-function Why() {
+
+export default function Why() {
   return (
     <>
       <PageHeader eyebrow="What makes us different" title="Signature services you will not easily find elsewhere in Kicukiro." />

@@ -1,13 +1,10 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { PageHeader, Section, Steps } from "@/components/Page";
-import { meta } from "@/lib/site";
 
-export const Route = createFileRoute("/your-visit")({
-  head: () => ({ meta: meta("Your Visit | Elite Ikaze Dental Clinic", "What to expect at your dental visit: booking, examination, a clear treatment plan with costs, consent, treatment and aftercare.") }),
-  component: Visit,
-});
 
-function Visit() {
+
+
+export default function Visit() {
   return (
     <>
       <PageHeader eyebrow="Your visit" title="What to expect" />

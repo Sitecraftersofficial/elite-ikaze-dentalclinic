@@ -1,17 +1,14 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { useState, type FormEvent } from "react";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { PageHeader, Section } from "@/components/Page";
-import { CLINIC, meta, whatsappLink } from "@/lib/site";
+import { CLINIC, whatsappLink } from "@/lib/site";
 
-export const Route = createFileRoute("/contact")({
-  head: () => ({ meta: meta("Contact & Book | Elite Ikaze Dental Clinic", "Book your dental appointment at Kicukiro Centre, Kigali. Call or WhatsApp 0788 837 911.") }),
-  component: Contact,
-});
+
 
 const field = "enamel-input mt-2 w-full px-4 py-3.5 outline-none transition-colors focus:border-primary focus:ring-2 focus:ring-ring/20";
 
-function Contact() {
+export default function Contact() {
   const [visit, setVisit] = useState("Clinic visit");
   function submit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
